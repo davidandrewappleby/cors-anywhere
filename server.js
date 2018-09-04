@@ -9,7 +9,7 @@ var port = process.env.PORT || 8080;
 // use originWhitelist instead.
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 // var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
-var originWhitelist = [ 'https://node-dev-davidappleby.c9users.io' ];
+var originWhitelist = [ 'https://node-dev-davidappleby.c9users.io', 'https://node-dev-davidappleby.c9users.io:8081' ];
 function parseEnvList(env) {
   if (!env) {
     return [];
